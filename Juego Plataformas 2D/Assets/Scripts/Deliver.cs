@@ -17,6 +17,11 @@ public class Deliver : MonoBehaviour {
     public AudioClip buzz;
     public AudioClip error;
 
+    public Renderer luzOff;
+    public Renderer luzVerde;
+    public Renderer luzRoja;
+
+
 
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
@@ -35,6 +40,10 @@ public class Deliver : MonoBehaviour {
 
         msgPanel.SetActive(false);
         msgPanelAux.SetActive(false);
+
+        luzOff.enabled = true;
+        luzVerde.enabled = false;
+        luzRoja.enabled = false;
 
 
 
@@ -63,6 +72,9 @@ public class Deliver : MonoBehaviour {
                         msgPanelAux.SetActive(true);
                         timer.time += 10;
                         audio.PlayOneShot(tada, 1.0f);
+                        luzOff.enabled = false;
+                        luzVerde.enabled = true;
+                        luzRoja.enabled = false;
 
                     }
 
@@ -74,6 +86,9 @@ public class Deliver : MonoBehaviour {
                         msgPanelAux.SetActive(true);
                         timer.time -= 10;
                         audio.PlayOneShot(buzz, 1.0f);
+                        luzOff.enabled = false;
+                        luzVerde.enabled = false;
+                        luzRoja.enabled = true;
                     }
 
                     carrito.iList.Remove(player.nMaleta);
@@ -88,6 +103,9 @@ public class Deliver : MonoBehaviour {
                     msgPanel.SetActive(true);
                     msgPanelAux.SetActive(true);
                     audio.PlayOneShot(error, 1.0f);
+                    luzOff.enabled = true;
+                    luzVerde.enabled = false;
+                    luzRoja.enabled = false;
                 }
             }
 
@@ -113,6 +131,9 @@ public class Deliver : MonoBehaviour {
             inside = false;
             msgPanel.SetActive(false);
             msgPanelAux.SetActive(false);
+            luzOff.enabled = true;
+            luzVerde.enabled = false;
+            luzRoja.enabled = false;
 
         }
     }
