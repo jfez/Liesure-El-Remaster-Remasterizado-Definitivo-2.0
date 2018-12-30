@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: pose
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Huesos/Cadera
+    localPosition: {x: 0.4382577, y: -0.6773068, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7080852, w: -0.70612705}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda
+    localPosition: {x: 0.54412955, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.0032966603, w: 0.9999946}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Cuello
+    localPosition: {x: 1.4379714, y: 0.0000000011864358, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.10522832, w: 0.9944481}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Cuello/Cabeza
+    localPosition: {x: 0.4657323, y: -0.000000067055225, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.058838915, w: 0.99826753}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Izq
+    localPosition: {x: 1.2487432, y: -0.26223072, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9781855, w: 0.20773356}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Izq/Antebrazo Izq
+    localPosition: {x: 1.0945445, y: 0, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.37074202, w: 0.9287359}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Izq/Antebrazo Izq/Mano Izq
+    localPosition: {x: 1.01, y: -0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Der
+    localPosition: {x: 1.1704423, y: 0.38377395, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.9836872, w: -0.17988747}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Der/Antebrazo Der
+    localPosition: {x: 0.8831791, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.33338255, w: 0.9427917}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Espalda/Brazo Der/Antebrazo Der/Mano Der
+    localPosition: {x: 1.01, y: -0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: 0, w: 1}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Izq
+    localPosition: {x: -0.36685652, y: -0.21763957, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.99795085, w: 0.0639853}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Izq/Pierna 2 Izq
+    localPosition: {x: 1.2700001, y: -0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.02127526, w: 0.9997737}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Izq/Pierna 2 Izq/Pie Izq
+    localPosition: {x: 1.1595677, y: -0.0000000025102054, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.431968, w: 0.90188897}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Der
+    localPosition: {x: -0.3657893, y: 0.16774495, z: 0}
+    localRotation: {x: -0, y: -0, z: -0.99948895, w: 0.031967998}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Der/Pierna 2 Der
+    localPosition: {x: 1.2700001, y: -0.00000017881393, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.018074138, w: 0.9998367}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Pierna Der/Pierna 2 Der/Pie Der
+    localPosition: {x: 1.034233, y: -0.00000004612957, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.3208471, w: 0.94713104}
+    localScale: {x: 1, y: 1, z: 1}

@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: cb9ecbbf93ac0ad4ab81cc0dba4ba67e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kelly VECTOR ATLAS_0
+    21300002: kelly VECTOR ATLAS_1
+    21300004: kelly VECTOR ATLAS_2
+    21300006: kelly VECTOR ATLAS_3
+    21300008: kelly VECTOR ATLAS_4
+    21300010: kelly VECTOR ATLAS_5
+    21300012: kelly VECTOR ATLAS_6
+    21300014: kelly VECTOR ATLAS_7
+    21300016: kelly VECTOR ATLAS_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 706
+        width: 160
+        height: 185
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0c5a14c77cd0e4c8a19973634ca676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 750
+        width: 222
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4b9ab5a5a6a044ca1dfa20423951f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 392
+        width: 353
+        height: 488
+      alignment: 9
+      pivot: {x: 0.509915, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef899b8f06116e41a2fe216e5210502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 249
+        width: 138
+        height: 441
+      alignment: 9
+      pivot: {x: 0.4746377, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbe21e14ae03a24d89b7bfdd6e623d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 541
+        width: 69
+        height: 149
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defa858a015790d4aa13838919287057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 505
+        width: 44
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448f37ddec3ef147abca25e86aad4bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 0
+        width: 73
+        height: 291
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48797253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c7ddbb004a75409708c78b923cc69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_7
+      rect:
+        serializedVersion: 2
+        x: 381.5
+        y: 0
+        width: 69
+        height: 290
+      alignment: 9
+      pivot: {x: 0.5072464, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823651e6fa4bd0740ae2b4d7eaa4cce3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kelly VECTOR ATLAS_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 116.00001
+        width: 174
+        height: 207
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01071957f2a9cf746ab464aa8e5071e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 041468858eafd4443a44e9d36e99727c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636771883862218793
+  assetBundleName: 
+  assetBundleVariant: 

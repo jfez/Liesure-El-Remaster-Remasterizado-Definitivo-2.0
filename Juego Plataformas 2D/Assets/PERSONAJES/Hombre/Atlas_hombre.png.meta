@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: fd76632bda5725341a15101fdde32b4f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atlas_hombre_0
+    21300002: Atlas_hombre_1
+    21300004: Atlas_hombre_2
+    21300006: Atlas_hombre_3
+    21300008: Atlas_hombre_4
+    21300010: Atlas_hombre_5
+    21300012: Atlas_hombre_6
+    21300014: Atlas_hombre_7
+    21300016: Atlas_hombre_8
+    21300018: Atlas_hombre_9
+    21300020: Atlas_hombre_10
+    21300022: Atlas_hombre_11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_hombre_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 792
+        width: 342
+        height: 316
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5079114}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42049ecb7c2a044e923d4b257204a4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 571
+        width: 81
+        height: 143
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f56bd95913b9b44ea39e18b77c89dd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 415
+        width: 115
+        height: 349
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf79c53f2588e4c47a150716dc16db29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_3
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 578
+        width: 85
+        height: 145
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c2a47290657de4ca1e0ba53ce37d12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 349
+        width: 52
+        height: 187
+      alignment: 9
+      pivot: {x: 0.43269232, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47546b325fbe04947b674649fa8fc189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 262
+        width: 50
+        height: 196
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51f8f040ce3b2f4d9aced322c0828d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_6
+      rect:
+        serializedVersion: 2
+        x: 327.26947
+        y: 262.3653
+        width: 54.365265
+        height: 197.6347
+      alignment: 9
+      pivot: {x: 0.5100781, y: 0.49907583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66bcabf04ccfe54790a9076d351d0f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 356
+        width: 50
+        height: 184
+      alignment: 9
+      pivot: {x: 0.57, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8963e4aaab8854eb99083c275b375a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 65.00001
+        width: 54
+        height: 199
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a27a10f241b9264787043279f4ad596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 61
+        width: 59
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90afc6692f459404891822f94f4db098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_10
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 0
+        width: 118
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4387755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3fc986a94601d44befb962c6d5aa6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_hombre_11
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 109.23593
+        height: 48.235928
+      alignment: 9
+      pivot: {x: 0.5034973, y: 0.43536013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8fb70b44d66e4469451ec8310a47e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9a3ba405c2534434f9b3e9f3255f98af
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636784119196363538
+  assetBundleName: 
+  assetBundleVariant: 

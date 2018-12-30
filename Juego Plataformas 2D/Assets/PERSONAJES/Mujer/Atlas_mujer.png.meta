@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 8f58fe2fd59f257468aa73dcb8477e77
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atlas_mujer_0
+    21300002: Atlas_mujer_1
+    21300004: Atlas_mujer_2
+    21300006: Atlas_mujer_3
+    21300008: Atlas_mujer_4
+    21300010: Atlas_mujer_5
+    21300012: Atlas_mujer_6
+    21300014: Atlas_mujer_7
+    21300016: Atlas_mujer_8
+    21300018: Atlas_mujer_9
+    21300020: Atlas_mujer_10
+    21300022: Atlas_mujer_11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_mujer_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 778
+        width: 405
+        height: 392
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50510204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3127806baf6f8d54a82694d6f2bb2506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 557
+        width: 92
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de54807629626b4aa36e5bcdc11fbbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 346
+        width: 178
+        height: 386
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e496175a61f9c4f8a652ca7ca008c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 557
+        width: 93
+        height: 129
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518c0b8887f5655478f2ee2a625ba75a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 379
+        width: 49
+        height: 181
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc086c5be321d2642bffa273b596611e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_5
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 368
+        width: 49
+        height: 180
+      alignment: 9
+      pivot: {x: 0.57142854, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3c093bca3564642b7f535a88c92e0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 17.620977
+        width: 41
+        height: 175.98961
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.49934208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37019cec350758e4f9a102c10e25b88c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_7
+      rect:
+        serializedVersion: 2
+        x: 141.58583
+        y: 162
+        width: 40.41417
+        height: 187
+      alignment: 9
+      pivot: {x: 0.517496, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263a296c97fd1f24786fc583bf70a75b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_8
+      rect:
+        serializedVersion: 2
+        x: 247.32245
+        y: 163.67755
+        width: 41.644897
+        height: 188.54681
+      alignment: 9
+      pivot: {x: 0.48451436, y: 0.49760827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb7b9addf3771448afe0070cd685a88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_9
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 15.632744
+        width: 44
+        height: 181.36725
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49825564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2b337226386704da9663f3ad2f1ea2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 85
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c1714d8bab1044fb4b9ad8f9a3f4b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_mujer_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 84.99997
+        height: 38.92327
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.4367567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba78512d680c011428a59497c5a4de4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1924686b891780f43a8340abd2b79818
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636784434989157166
+  assetBundleName: 
+  assetBundleVariant: 

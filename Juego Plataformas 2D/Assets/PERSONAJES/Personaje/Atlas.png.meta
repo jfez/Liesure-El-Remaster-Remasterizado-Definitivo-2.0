@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 5c4f8ec94e083f14a8b6d825df32830a
+timeCreated: 1540826839
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atlas_0
+    21300002: Atlas_1
+    21300004: Atlas_2
+    21300006: Atlas_3
+    21300008: Atlas_4
+    21300010: Atlas_5
+    21300012: Atlas_6
+    21300014: Atlas_7
+    21300016: Atlas_8
+    21300018: Atlas_9
+    21300020: Atlas_10
+    21300022: Atlas_11
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 82.677574
+        y: 582.014
+        width: 328.97192
+        height: 310.98602
+      alignment: 9
+      pivot: {x: 0.49950287, y: 0.51283985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 101.36166
+        y: 465.0001
+        width: 90.63834
+        height: 90.16977
+      alignment: 9
+      pivot: {x: 0.49800494, y: 0.4879674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 258
+        width: 115
+        height: 305
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 461
+        width: 92.279236
+        height: 86.99994
+      alignment: 9
+      pivot: {x: 0.498487, y: 0.50000036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366.5
+        width: 111
+        height: 112
+      alignment: 9
+      pivot: {x: 0.4684685, y: 0.5044643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 125.42328
+        y: 229.8175
+        width: 49.153442
+        height: 169.97092
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50115925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 383.00467
+        y: 228.00002
+        width: 48.658875
+        height: 173.99998
+      alignment: 9
+      pivot: {x: 0.5034093, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 432.11972
+        y: 360.14645
+        width: 109.88028
+        height: 112.44333
+      alignment: 9
+      pivot: {x: 0.5540601, y: 0.5145129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 65.39124
+        width: 66.217514
+        height: 166.60876
+      alignment: 9
+      pivot: {x: 0.4908067, y: 0.5018269}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 63.663536
+        width: 71.33179
+        height: 170.33646
+      alignment: 9
+      pivot: {x: 0.49767435, y: 0.4980523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 63.76602
+        y: 1.5320377
+        width: 108.882996
+        height: 65.46795
+      alignment: 9
+      pivot: {x: 0.5256466, y: 0.5035741}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 335.2926
+        y: 0
+        width: 95.96796
+        height: 72.6058
+      alignment: 9
+      pivot: {x: 0.53358847, y: 0.45450914}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 100979625905173
+  assetBundleName: 
+  assetBundleVariant: 
