@@ -17382,6 +17382,7 @@ MonoBehaviour:
   lista: {fileID: 1003519979}
   player: {fileID: 0}
   player2: {fileID: 1492517614}
+  player3: {fileID: 0}
 --- !u!1 &1003519979
 GameObject:
   m_ObjectHideFlags: 0
@@ -23640,9 +23641,17 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.208
       objectReference: {fileID: 0}
+    - target: {fileID: 50083993186482914, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
     - {fileID: 114897783969424680, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+    - {fileID: 82802761078611526, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+    - {fileID: 114021644377745416, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+    - {fileID: 114893775047712296, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1347570449 stripped

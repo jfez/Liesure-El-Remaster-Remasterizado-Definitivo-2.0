@@ -1448,6 +1448,18 @@ Prefab:
       propertyPath: timer
       value: 
       objectReference: {fileID: 35849706}
+    - target: {fileID: 4467598527588606, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+      propertyPath: m_LocalScale.x
+      value: -0.48016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467598527588606, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.48016
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467598527588606, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.48016
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
   m_IsPrefabAsset: 0

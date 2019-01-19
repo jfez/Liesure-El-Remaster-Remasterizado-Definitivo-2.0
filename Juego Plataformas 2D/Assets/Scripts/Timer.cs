@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour {
     public PickUp carrito;
     public bool inicio;
     public int recompensa;
-    public PCH player;
+    public PlayerController player;
 
     public AudioSource audio;
 
