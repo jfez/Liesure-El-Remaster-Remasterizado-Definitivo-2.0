@@ -1,21 +1,4 @@
-﻿/*using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class PantallaDeCarga : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}*/
-
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -30,6 +13,8 @@ public class PantallaDeCarga : MonoBehaviour
     public float velocidadAparecer = 0.5f;
     [Range(0.01f, 1.0f)]
     public float velocidadOcultar = 0.5f;
+    //public Slider barra;
+    //private AsyncOperation asyn;
 
     void Awake()
     {
@@ -43,6 +28,7 @@ public class PantallaDeCarga : MonoBehaviour
             Instancia = this;
             DontDestroyOnLoad(this);
             imageDeCarga.gameObject.SetActive(false);
+            //barra.gameObject.SetActive(false);
 
         }
         else
@@ -59,9 +45,12 @@ public class PantallaDeCarga : MonoBehaviour
 
     private IEnumerator MostrarPantallaDeCarga(string nombreEscena)
     {
+        //barra.value = 0;
         imageDeCarga.gameObject.SetActive(true);
+        //barra.gameObject.SetActive(true);
         Color c = imageDeCarga.color;
         c.a = 0.0f;
+        
 
         //Mientras no esté totalmente visible va aumentando su visibilidad
         while (c.a < 1)
@@ -73,12 +62,22 @@ public class PantallaDeCarga : MonoBehaviour
 
         //Carga la escena
         SceneManager.LoadScene(nombreEscena);
+        //asyn = SceneManager.LoadSceneAsync(nombreEscena);
+
 
         //Espera a que haya cargado la nueva escena
         while (!nombreEscena.Equals(SceneManager.GetActiveScene().name))
         {
             yield return null;
         }
+
+        //yield return new WaitForSeconds(0.5f);
+
+        /*while (!asyn.isDone)
+        {
+            barra.value = asyn.progress;
+            yield return null;
+        }*/
 
         //Mientras la imagen de carga siga visible va desvaneciéndola
         while (c.a > 0)
@@ -87,6 +86,9 @@ public class PantallaDeCarga : MonoBehaviour
             c.a -= velocidadOcultar;
             yield return null;
         }
+
+        //yield return new WaitForSeconds(0.5f);
         imageDeCarga.gameObject.SetActive(false);
+        //barra.gameObject.SetActive(false);
     }
 }

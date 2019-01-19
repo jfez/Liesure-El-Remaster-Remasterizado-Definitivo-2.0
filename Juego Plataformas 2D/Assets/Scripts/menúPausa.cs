@@ -8,6 +8,7 @@ public class menúPausa : MonoBehaviour {
     public GameObject flecha, lista;
     public PlayerController player;
     public PlayerController2 player2;
+    public PCH player3;
 
     int indice;
     private float v;
@@ -89,7 +90,7 @@ public class menúPausa : MonoBehaviour {
         
 
 
-        if (player2 == null)
+        if (player2 == null && player3 == null)
         {
             if (player.pause && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton0)))
             {
@@ -97,9 +98,17 @@ public class menúPausa : MonoBehaviour {
             }
         }
 
-        else if (player == null)
+        else if (player == null && player3 == null)
         {
             if (player2.pause && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton0)))
+            {
+                Accion();
+            }
+        }
+
+        else if (player == null && player2 == null)
+        {
+            if (player3.pause && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton0)))
             {
                 Accion();
             }

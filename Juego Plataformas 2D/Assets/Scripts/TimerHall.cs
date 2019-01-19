@@ -4,55 +4,57 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour {
+public class TimerHall : MonoBehaviour {
 
     [SerializeField] GameObject msgPanel;
     [SerializeField] Text msgText;
 
     public float time;
     public float auxiliarTime;
-    public PickUp carrito;
+    //public PickUp carrito;
     public bool inicio;
-    public int recompensa;
+    //public int recompensa;
     public PCH player;
 
     public AudioSource audio;
 
-    public Renderer reloj1;
+    /*public Renderer reloj1;
     public Renderer reloj11;
     public Renderer reloj2;
-    public Renderer reloj21;
+    public Renderer reloj21;*/
 
 
 
-    private bool panic;
+    /*private bool panic;
     private bool end;
-    private bool restart;
+    private bool restart;*/
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         time = 60.0f;    //60
         auxiliarTime = 0.0f;
 
         audio = GetComponent<AudioSource>();
 
-        inicio = false;
+        inicio = true;
 
         msgPanel.SetActive(false);
-        panic = false;
+        //panic = false;
 
-        reloj1.enabled = true;
+        /*reloj1.enabled = true;
         reloj11.enabled = false;
         reloj2.enabled = false;
-        reloj21.enabled = false;
+        reloj21.enabled = false;*/
 
-        end = false;
-        restart = false;
+        //end = false;
+        //restart = false;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (inicio)
         {
             msgPanel.SetActive(true);
@@ -62,16 +64,16 @@ public class Timer : MonoBehaviour {
             }
             //msgText.text = "Tiempo restante: " + time.ToString("f0");
             msgText.text = time.ToString("f0");
-            recompensa = Mathf.RoundToInt(time);
+            //recompensa = Mathf.RoundToInt(time);
             //Debug.Log(recompensa);
 
-            if (Mathf.RoundToInt(time) % 2 == 0 && time >= 10)
+            /*if (Mathf.RoundToInt(time) % 2 == 0 && time >= 10)
             {
                 reloj1.enabled = true;
                 reloj11.enabled = false;
                 reloj2.enabled = false;
                 reloj21.enabled = false;
-                
+
             }
 
             else if (Mathf.RoundToInt(time) % 2 != 0 && time >= 10)
@@ -80,7 +82,7 @@ public class Timer : MonoBehaviour {
                 reloj11.enabled = true;
                 reloj2.enabled = false;
                 reloj21.enabled = false;
-                
+
             }
 
             else if (Mathf.RoundToInt(time) % 2 == 0 && time < 10)
@@ -89,7 +91,7 @@ public class Timer : MonoBehaviour {
                 reloj11.enabled = false;
                 reloj2.enabled = true;
                 reloj21.enabled = false;
-               
+
             }
 
             else if (Mathf.RoundToInt(time) % 2 != 0 && time < 10)
@@ -99,13 +101,13 @@ public class Timer : MonoBehaviour {
                 reloj2.enabled = false;
                 reloj21.enabled = true;
 
-            }
+            }*/
         }
 
 
-        
 
-        if (time < 1 && restart == false)
+
+        /*if (time < 1 && restart == false)
         {
             if (PantallaDeCarga.Instancia != null)
             {
@@ -154,19 +156,8 @@ public class Timer : MonoBehaviour {
                 }
                 end = true;
             }
-            
 
-        }
 
-        /*if (Input.GetKeyDown(KeyCode.J)){
-            PantallaDeCarga.Instancia.CargarEscena("Level0.3_Hall");
         }*/
-
-        /*if (Input.GetKeyDown(KeyCode.J))
-        {
-            PantallaDeCarga.Instancia.CargarEscena("Level2");
-        }*/
-
-
     }
 }
