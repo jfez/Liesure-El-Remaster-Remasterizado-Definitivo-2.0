@@ -45,7 +45,7 @@ public class menúPausa : MonoBehaviour {
         //print(v);
         v2 = Input.GetAxis("DPadY");
         secs += Time.unscaledDeltaTime;
-        print(secs);
+        //print(secs);
 
         if (secs > 0.3)
         {

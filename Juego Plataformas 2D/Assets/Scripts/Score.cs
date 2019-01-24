@@ -8,6 +8,8 @@ public class Score : MonoBehaviour {
     public int recompensa2;
     public int recompensa;
     public int pausas;
+    public int ayuda; //la ayuda de alfredo con la velocidad de las maletas
+
 
     public Timer timer;
     public int scene;
@@ -22,11 +24,13 @@ public class Score : MonoBehaviour {
             recompensa1 = 0;
             recompensa2 = 0;
             pausas = 0;
+            ayuda = 0;
 
             PlayerPrefs.SetInt("recompensa0", recompensa);
             PlayerPrefs.SetInt("recompensa1", recompensa1);
             PlayerPrefs.SetInt("recompensa2", recompensa2);
             PlayerPrefs.SetInt("pausas", pausas);
+            PlayerPrefs.SetInt("ayuda", ayuda);
         }
         
         else if (scene == 1)    //recompensa nivel 1
@@ -84,6 +88,6 @@ public class Score : MonoBehaviour {
             recompensa1 = timer.recompensa * 10;
             PlayerPrefs.SetInt("recompensa" + scene.ToString(), recompensa1);
         }*/ //la actualización del PlayerPrefs ha de hacerse en el script Comanda (al entregar las bandejas) --> no dependerá del tiempo
-
+        //la actualización de la ayuda se hace en el primer hall al hablar con alfredo
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TimerHall : MonoBehaviour {
 
-    [SerializeField] GameObject msgPanel;
-    [SerializeField] Text msgText;
+    [SerializeField] GameObject msgPanelTime;
+    [SerializeField] Text msgTextTime;
 
     public float time;
     public float auxiliarTime;
@@ -17,6 +17,12 @@ public class TimerHall : MonoBehaviour {
     public PCH player;
 
     public AudioSource audio;
+
+    [SerializeField] GameObject msgPanel;
+    [SerializeField] Text msgText;
+
+    [SerializeField] GameObject msgPanelAux;
+    [SerializeField] Text msgTextAux;
 
     /*public Renderer reloj1;
     public Renderer reloj11;
@@ -39,7 +45,9 @@ public class TimerHall : MonoBehaviour {
 
         inicio = true;
 
+        msgPanelTime.SetActive(false);
         msgPanel.SetActive(false);
+        msgPanelAux.SetActive(false);
         //panic = false;
 
         /*reloj1.enabled = true;
@@ -57,13 +65,13 @@ public class TimerHall : MonoBehaviour {
     {
         if (inicio)
         {
-            msgPanel.SetActive(true);
+            msgPanelTime.SetActive(true);
             if (time > 0)
             {
                 time -= Time.deltaTime;
             }
             //msgText.text = "Tiempo restante: " + time.ToString("f0");
-            msgText.text = time.ToString("f0");
+            msgTextTime.text = time.ToString("f0");
             //recompensa = Mathf.RoundToInt(time);
             //Debug.Log(recompensa);
 
@@ -102,6 +110,18 @@ public class TimerHall : MonoBehaviour {
                 reloj21.enabled = true;
 
             }*/
+        }
+
+        if (time < 55)
+        {
+            player.canInteract = false;
+            player.canMove = false;
+            msgText.text = "¡Lo siento, he de irme, llego tarde!";
+            msgTextAux.text = "TÚ";
+            msgPanelTime.SetActive(false);
+            msgPanel.SetActive(true);
+            msgPanelAux.SetActive(true);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
         }
 
 

@@ -18,6 +18,8 @@ public class PCH : MonoBehaviour {
     public bool pause;
     public bsoHall bso;
     public TimerHall timer;
+    public bool canMove;
+    public bool canInteract;
 
     //public AudioSource punch;
 
@@ -26,6 +28,7 @@ public class PCH : MonoBehaviour {
     private Rigidbody2D rb2d;
     private Animator anim;
     private bool jump;
+    private float h;
 
 
 
@@ -39,6 +42,9 @@ public class PCH : MonoBehaviour {
         hold = false;
         pause = false;
         msgPanel.SetActive(false);
+        canMove = true;
+        canInteract = true;
+        
 
         //punch = GetComponent<AudioSource>();
     }
@@ -55,7 +61,12 @@ public class PCH : MonoBehaviour {
         //Debug.Log("PC" +carry);
         //Debug.Log("PC hold " + hold);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded && pause == false)
+        /*if ((Input.GetKeyDown(KeyCode.Alpha0)))
+        {
+            PantallaDeCarga.Instancia.CargarEscena("Level1");
+        }*/
+
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded && pause == false && canMove == true)
         {
             jump = true;
         }
@@ -103,7 +114,15 @@ public class PCH : MonoBehaviour {
             rb2d.velocity = fixedVelocity;              //fricción artificial con el suelo (las plataformas son deslizantes para no quedarte enganchado en las paredes y poder saltar infinitamente)
         }
 
-        float h = Input.GetAxis("Horizontal");
+        if (canMove)
+        {
+            h = Input.GetAxis("Horizontal");
+        }
+
+        else
+        {
+            h = 0;
+        }
 
         rb2d.AddForce(Vector2.right * speed * h);
 

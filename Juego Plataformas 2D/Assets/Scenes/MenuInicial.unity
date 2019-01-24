@@ -507,6 +507,7 @@ MonoBehaviour:
   recompensa2: 0
   recompensa: 0
   pausas: 0
+  ayuda: 0
   timer: {fileID: 0}
   scene: 0
 --- !u!4 &235007160
@@ -691,7 +692,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level1
+          m_StringArgument: Level0_Hall
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1735,7 +1736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612128234}
   m_Layer: 5
-  m_Name: Level1
+  m_Name: Level0_Hall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

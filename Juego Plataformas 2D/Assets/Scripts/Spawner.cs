@@ -12,10 +12,20 @@ public class Spawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         InvokeRepeating("Create", 0.0f, intervalTime);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        if (PlayerPrefs.GetInt("ayuda") == 1)
+        {
+            maletas.GetComponent<Rigidbody2D>().gravityScale = 0.02f; //baja la velocidad de las maletas porque tiene la ayuda
+        }
+
+        else
+        {
+            maletas.GetComponent<Rigidbody2D>().gravityScale = 0.05f; //velocidad estándar
+        }
+        
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
