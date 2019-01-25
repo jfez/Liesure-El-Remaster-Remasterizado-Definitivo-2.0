@@ -177,12 +177,12 @@ TextureImporter:
       name: mama_atlas_3
       rect:
         serializedVersion: 2
-        x: 150.00002
+        x: 151.00002
         y: 117
-        width: 64
+        width: 63
         height: 146
       alignment: 9
-      pivot: {x: 0.49999976, y: 0.5}
+      pivot: {x: 0.49206328, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,6 +284,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636816214501435233
+  userData: 636840279457150235
   assetBundleName: 
   assetBundleVariant: 

@@ -376,7 +376,7 @@ Animator:
   m_GameObject: {fileID: 11133345}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14d6ff042a72bae469fd881a7e218380, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1066,7 +1066,7 @@ Animator:
   m_GameObject: {fileID: 42371597}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14d6ff042a72bae469fd881a7e218380, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4370,7 +4370,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 188899880}
-  m_LocalRotation: {x: 0, y: 0, z: 0.00015040237, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00015040657, w: 1}
   m_LocalPosition: {x: 0.87484217, y: 6.1468164e-10, z: 0}
   m_LocalScale: {x: 3.3455327, y: 1, z: 1}
   m_Children: []
@@ -5242,7 +5242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 240894466}
   - component: {fileID: 240894469}
-  - component: {fileID: 240894468}
   - component: {fileID: 240894467}
   m_Layer: 0
   m_Name: BrazoIz
@@ -5264,8 +5263,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &240894467
-MeshRenderer:
+--- !u!137 &240894467
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -5299,13 +5298,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
---- !u!33 &240894468
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 240894465}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1863374533}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1863374533}
+  m_AABB:
+    m_Center: {x: 0.5247669, y: 0.006094789, z: 0}
+    m_Extent: {x: 0.60755396, y: 0.015501531, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &240894469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5324,7 +5329,8 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1863374533}
 --- !u!1 &247601996
 GameObject:
   m_ObjectHideFlags: 0
@@ -8644,6 +8650,7 @@ MonoBehaviour:
   recompensa2: 0
   recompensa: 0
   pausas: 0
+  ayuda: 0
   timer: {fileID: 0}
   scene: 2
 --- !u!4 &416560832
@@ -14834,7 +14841,6 @@ GameObject:
   m_Component:
   - component: {fileID: 744083335}
   - component: {fileID: 744083338}
-  - component: {fileID: 744083337}
   - component: {fileID: 744083336}
   m_Layer: 0
   m_Name: ManoDer
@@ -14856,8 +14862,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &744083336
-MeshRenderer:
+--- !u!137 &744083336
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -14891,13 +14897,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &744083337
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 744083334}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 882243978}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 882243978}
+  m_AABB:
+    m_Center: {x: 0.55189955, y: -0.002719568, z: 0}
+    m_Extent: {x: 0.56278527, y: 0.022216173, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &744083338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14916,7 +14928,8 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 882243978}
 --- !u!1 &744486465
 GameObject:
   m_ObjectHideFlags: 0
@@ -17413,7 +17426,7 @@ GameObject:
   - component: {fileID: 882243978}
   - component: {fileID: 882243979}
   m_Layer: 0
-  m_Name: BrazoDer
+  m_Name: ManoDer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17456,6 +17469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 884292284}
+  - component: {fileID: 884292285}
   m_Layer: 0
   m_Name: Vip1
   m_TagString: Untagged
@@ -17470,14 +17484,14 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884292283}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.873, y: -4.8, z: 0.007308027}
+  m_LocalPosition: {x: -13.268, y: -4.8, z: 0.007308027}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children:
   - {fileID: 523568944}
   - {fileID: 1822169524}
   - {fileID: 240894466}
-  - {fileID: 1381164889}
   - {fileID: 1947265367}
+  - {fileID: 1381164889}
   - {fileID: 744083335}
   - {fileID: 1841705578}
   - {fileID: 1061364969}
@@ -17486,6 +17500,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &884292285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884292283}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ebac95f2bb16484cb8411ed138cf02b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &888728259
 Prefab:
   m_ObjectHideFlags: 0
@@ -18146,6 +18178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918373122}
+  - component: {fileID: 918373123}
   m_Layer: 0
   m_Name: Vip2
   m_TagString: Untagged
@@ -18160,7 +18193,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 918373121}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.31, y: -4.654431, z: 0.007308027}
+  m_LocalPosition: {x: -13.644, y: -4.654431, z: 0.007308027}
   m_LocalScale: {x: 0.08, y: 0.08, z: 1}
   m_Children:
   - {fileID: 1331403480}
@@ -18180,6 +18213,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &918373123
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 918373121}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ebac95f2bb16484cb8411ed138cf02b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &920040558
 GameObject:
   m_ObjectHideFlags: 0
@@ -18562,7 +18613,7 @@ Animator:
   m_GameObject: {fileID: 987956662}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14d6ff042a72bae469fd881a7e218380, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20383,7 +20434,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1061364969}
   - component: {fileID: 1061364972}
-  - component: {fileID: 1061364971}
   - component: {fileID: 1061364970}
   m_Layer: 0
   m_Name: PiernaIz
@@ -20405,8 +20455,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1061364970
-MeshRenderer:
+--- !u!137 &1061364970
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -20440,13 +20490,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
---- !u!33 &1061364971
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1061364968}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 397754992}
+  - {fileID: 172544384}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 397754992}
+  m_AABB:
+    m_Center: {x: 0.5396566, y: -0.018034697, z: 0}
+    m_Extent: {x: 0.60230905, y: 0.5367583, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1061364972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20465,7 +20522,9 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 397754992}
+  - {fileID: 172544384}
 --- !u!1 &1067277750
 GameObject:
   m_ObjectHideFlags: 0
@@ -23605,7 +23664,7 @@ Animator:
   m_GameObject: {fileID: 1203750608}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 14d6ff042a72bae469fd881a7e218380, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -23712,7 +23771,7 @@ Animator:
   m_GameObject: {fileID: 1215454657}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a6c2fcd7146265e488644eefa7ab844b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24275,7 +24334,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1271036522}
   - component: {fileID: 1271036525}
-  - component: {fileID: 1271036524}
   - component: {fileID: 1271036523}
   m_Layer: 0
   m_Name: PieDer
@@ -24297,8 +24355,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1271036523
-MeshRenderer:
+--- !u!137 &1271036523
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -24332,13 +24390,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1271036524
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1271036521}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 433483185}
+  - {fileID: 819096107}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 433483185}
+  m_AABB:
+    m_Center: {x: 0.54720163, y: -0.024501055, z: 0}
+    m_Extent: {x: 0.6335366, y: 0.29052693, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1271036525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24357,7 +24422,9 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 433483185}
+  - {fileID: 819096107}
 --- !u!1 &1273953314
 GameObject:
   m_ObjectHideFlags: 0
@@ -26473,7 +26540,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1381164889}
   - component: {fileID: 1381164892}
-  - component: {fileID: 1381164891}
   - component: {fileID: 1381164890}
   m_Layer: 0
   m_Name: BrazoDer
@@ -26493,10 +26559,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 884292284}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1381164890
-MeshRenderer:
+--- !u!137 &1381164890
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -26530,13 +26596,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1381164891
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1381164888}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 503626055}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 503626055}
+  m_AABB:
+    m_Center: {x: 0.51453686, y: 0.0036956593, z: 0}
+    m_Extent: {x: 0.58566093, y: 0.066791646, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1381164892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26555,7 +26627,8 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 503626055}
 --- !u!1 &1382117167
 GameObject:
   m_ObjectHideFlags: 0
@@ -28917,7 +28990,7 @@ Animator:
   m_GameObject: {fileID: 1591789348}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a6c2fcd7146265e488644eefa7ab844b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -32652,7 +32725,7 @@ Transform:
   - {fileID: 1348434195}
   m_Father: {fileID: 1454608346}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -83.338005}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -83.337006}
 --- !u!114 &1732977184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33979,7 +34052,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1822169524}
   - component: {fileID: 1822169527}
-  - component: {fileID: 1822169526}
   - component: {fileID: 1822169525}
   m_Layer: 0
   m_Name: Pecho
@@ -34001,8 +34073,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1822169525
-MeshRenderer:
+--- !u!137 &1822169525
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -34036,13 +34108,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
---- !u!33 &1822169526
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1822169523}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1193459376}
+  - {fileID: 1327987292}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1193459376}
+  m_AABB:
+    m_Center: {x: 3.239157, y: 0.012602642, z: 0}
+    m_Extent: {x: 1.6370947, y: 0.05262161, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1822169527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34061,7 +34140,9 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1193459376}
+  - {fileID: 1327987292}
 --- !u!1 &1824053140
 GameObject:
   m_ObjectHideFlags: 0
@@ -34289,7 +34370,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1841705578}
   - component: {fileID: 1841705581}
-  - component: {fileID: 1841705580}
   - component: {fileID: 1841705579}
   m_Layer: 0
   m_Name: Falda
@@ -34311,8 +34391,8 @@ Transform:
   m_Father: {fileID: 884292284}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1841705579
-MeshRenderer:
+--- !u!137 &1841705579
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -34346,13 +34426,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1841705580
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1841705577}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1193459376}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1193459376}
+  m_AABB:
+    m_Center: {x: 0.7996154, y: -0.0019369796, z: 0}
+    m_Extent: {x: 1.1947827, y: 0.083994985, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1841705581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34371,7 +34457,8 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1193459376}
 --- !u!1 &1848255488
 GameObject:
   m_ObjectHideFlags: 0
@@ -35359,7 +35446,7 @@ Animator:
   m_GameObject: {fileID: 1909798275}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a6c2fcd7146265e488644eefa7ab844b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -36317,7 +36404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1947265367}
   - component: {fileID: 1947265370}
-  - component: {fileID: 1947265369}
   - component: {fileID: 1947265368}
   m_Layer: 0
   m_Name: ManoIz
@@ -36337,10 +36423,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 884292284}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1947265368
-MeshRenderer:
+--- !u!137 &1947265368
+SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -36374,13 +36460,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1947265369
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1947265366}
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 0}
+  m_Bones:
+  - {fileID: 1376469201}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1376469201}
+  m_AABB:
+    m_Center: {x: 0.5374267, y: 0.0023633316, z: 0}
+    m_Extent: {x: 0.5872445, y: 0.021764629, z: 0}
+  m_DirtyAABB: 0
 --- !u!114 &1947265370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36399,7 +36491,8 @@ MonoBehaviour:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Bones: []
-  m_BoneTransforms: []
+  m_BoneTransforms:
+  - {fileID: 1376469201}
 --- !u!1 &1951539998
 GameObject:
   m_ObjectHideFlags: 0
@@ -37689,7 +37782,7 @@ Animator:
   m_GameObject: {fileID: 2024202718}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f2a2f78f8e493b41b64d7acbb5a110b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a6c2fcd7146265e488644eefa7ab844b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
