@@ -131,6 +131,19 @@ public class Timer2 : MonoBehaviour {
             end = true;
         }
 
+        if (Input.GetKeyDown(KeyCode.F9) && Input.GetKeyDown(KeyCode.F10))
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level0.3_Hall");      //se ha pasado el nivel
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level0.3_Hall");
+            }
+        }
+
 
     }
 }

@@ -145,12 +145,12 @@ public class Timer : MonoBehaviour {
 
                 if (PantallaDeCarga.Instancia != null)
                 {
-                    PantallaDeCarga.Instancia.CargarEscena("Level2");      //reiniciar el nivel
+                    PantallaDeCarga.Instancia.CargarEscena("Level0.2_Hall");      //se ha pasado el nivel
                 }
 
                 else
                 {
-                    SceneManager.LoadScene("Level2");
+                    SceneManager.LoadScene("Level0.2_Hall");
                 }
                 end = true;
             }
@@ -158,9 +158,18 @@ public class Timer : MonoBehaviour {
 
         }
 
-        /*if (Input.GetKeyDown(KeyCode.J)){
-            PantallaDeCarga.Instancia.CargarEscena("Level0.3_Hall");
-        }*/
+        if (Input.GetKeyDown(KeyCode.F9) && Input.GetKeyDown(KeyCode.F10))
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level0.2_Hall");      //se ha pasado el nivel
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level0.2_Hall");
+            }
+        }
 
         /*if (Input.GetKeyDown(KeyCode.J))
         {

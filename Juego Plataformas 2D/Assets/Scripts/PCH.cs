@@ -158,6 +158,61 @@ public class PCH : MonoBehaviour {
 
     }
 
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Pared" && timer.timeDone)
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level1");      
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level1");
+            }
+        }
+
+        if (col.gameObject.tag == "Puerta1" && timer.timeDone == false && pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level1");
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level1");
+            }
+        }
+
+        if (col.gameObject.tag == "Pared2" && timer.timeDone)
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level2");
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level2");
+            }
+        }
+
+        if (col.gameObject.tag == "Puerta2" && timer.timeDone == false && pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level2");
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level2");
+            }
+        }
+    }
+
     /*void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Maleta")

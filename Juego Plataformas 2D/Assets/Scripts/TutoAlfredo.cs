@@ -59,7 +59,7 @@ public class TutoAlfredo : MonoBehaviour {
         frases.Add("¡Pero qué es la vida si no pequeñas alegrías!");
         frases.Add("¡Ay, qué simpático! No como el otro nuevo... ve con ojo por las habitaciones, le hemos mandado allí y se ve que no es muy diestro con las maletas");
         frases.Add("Bueno, he de seguir ya con la faena que pronto sacarán el menú en el comedor y no me lo quiero perder...");
-        frases.Add("¡Hasta luego!");
+        frases.Add("¡Hasta luego! En cuanto acabes la cháchara, ve a trabajar a las habitaciones, al final del pasillo.");
         frases.Add("");
 
         //msgText.text = "¡Hey, tú, novato! Ven aquí que te explique lo que debes hacer.";
@@ -79,9 +79,13 @@ public class TutoAlfredo : MonoBehaviour {
         {
             if (inside == true && index < 25 && decision == false && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
+                
                 if (player.canMove)
                 {
                     player.canMove = false;
+                    player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                    player.transform.localPosition = new Vector3(-5.65f, -4.683063f, 0f);
+                    player.transform.localScale = new Vector3(-0.48016f, 0.48016f, 0.48016f);
                 }
                 if (rend.enabled)
                 {

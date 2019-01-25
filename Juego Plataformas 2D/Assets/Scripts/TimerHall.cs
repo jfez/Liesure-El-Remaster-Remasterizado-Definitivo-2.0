@@ -15,6 +15,8 @@ public class TimerHall : MonoBehaviour {
     public bool inicio;
     //public int recompensa;
     public PCH player;
+    public bool timeDone;
+    public GameObject pared;
 
     public AudioSource audio;
 
@@ -48,6 +50,7 @@ public class TimerHall : MonoBehaviour {
         msgPanelTime.SetActive(false);
         msgPanel.SetActive(false);
         msgPanelAux.SetActive(false);
+        timeDone = false;
         //panic = false;
 
         /*reloj1.enabled = true;
@@ -66,54 +69,18 @@ public class TimerHall : MonoBehaviour {
         if (inicio)
         {
             msgPanelTime.SetActive(true);
-            if (time > 0)
-            {
-                time -= Time.deltaTime;
-            }
-            //msgText.text = "Tiempo restante: " + time.ToString("f0");
+            time -= Time.deltaTime;
             msgTextTime.text = time.ToString("f0");
-            //recompensa = Mathf.RoundToInt(time);
-            //Debug.Log(recompensa);
-
-            /*if (Mathf.RoundToInt(time) % 2 == 0 && time >= 10)
-            {
-                reloj1.enabled = true;
-                reloj11.enabled = false;
-                reloj2.enabled = false;
-                reloj21.enabled = false;
-
-            }
-
-            else if (Mathf.RoundToInt(time) % 2 != 0 && time >= 10)
-            {
-                reloj1.enabled = false;
-                reloj11.enabled = true;
-                reloj2.enabled = false;
-                reloj21.enabled = false;
-
-            }
-
-            else if (Mathf.RoundToInt(time) % 2 == 0 && time < 10)
-            {
-                reloj1.enabled = false;
-                reloj11.enabled = false;
-                reloj2.enabled = true;
-                reloj21.enabled = false;
-
-            }
-
-            else if (Mathf.RoundToInt(time) % 2 != 0 && time < 10)
-            {
-                reloj1.enabled = false;
-                reloj11.enabled = false;
-                reloj2.enabled = false;
-                reloj21.enabled = true;
-
-            }*/
         }
 
-        if (time < 55)
+        if (time < 50)
         {
+            if (timeDone == false)
+            {
+                timeDone = true;
+                Destroy(pared);
+            }
+            player.transform.localScale = new Vector3(-0.48016f, 0.48016f, 0.48016f);
             player.canInteract = false;
             player.canMove = false;
             msgText.text = "¡Lo siento, he de irme, llego tarde!";
@@ -121,7 +88,7 @@ public class TimerHall : MonoBehaviour {
             msgPanelTime.SetActive(false);
             msgPanel.SetActive(true);
             msgPanelAux.SetActive(true);
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(10, 0);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(10, -10);
         }
 
 

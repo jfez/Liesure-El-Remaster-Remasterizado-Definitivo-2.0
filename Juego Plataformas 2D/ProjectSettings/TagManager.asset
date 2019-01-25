@@ -12,6 +12,10 @@ TagManager:
   - Botones
   - Maleta
   - timer
+  - Pared
+  - Puerta1
+  - Puerta2
+  - Pared2
   layers:
   - Default
   - TransparentFX
