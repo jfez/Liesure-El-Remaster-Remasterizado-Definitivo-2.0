@@ -29,6 +29,7 @@ public class PCH : MonoBehaviour {
     private Animator anim;
     private bool jump;
     private float h;
+    private bool cargando;
 
 
 
@@ -44,6 +45,7 @@ public class PCH : MonoBehaviour {
         msgPanel.SetActive(false);
         canMove = true;
         canInteract = true;
+        cargando = false;
         
 
         //punch = GetComponent<AudioSource>();
@@ -160,55 +162,63 @@ public class PCH : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Pared" && timer.timeDone)
-        {
-            if (PantallaDeCarga.Instancia != null)
-            {
-                PantallaDeCarga.Instancia.CargarEscena("Level1");      
-            }
-
-            else
-            {
-                SceneManager.LoadScene("Level1");
-            }
-        }
-
-        if (col.gameObject.tag == "Puerta1" && timer.timeDone == false && pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+        if (col.gameObject.tag == "Pared" && timer.timeDone && cargando == false)
         {
             if (PantallaDeCarga.Instancia != null)
             {
                 PantallaDeCarga.Instancia.CargarEscena("Level1");
+                cargando = true;      
             }
 
             else
             {
                 SceneManager.LoadScene("Level1");
+                cargando = true;
             }
         }
 
-        if (col.gameObject.tag == "Pared2" && timer.timeDone)
+        if (col.gameObject.tag == "Puerta1" && timer.timeDone == false && pause == false && cargando == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+        {
+            if (PantallaDeCarga.Instancia != null)
+            {
+                PantallaDeCarga.Instancia.CargarEscena("Level1");
+                cargando = true;
+            }
+
+            else
+            {
+                SceneManager.LoadScene("Level1");
+                cargando = true;
+            }
+        }
+
+        if (col.gameObject.tag == "Pared2" && timer.timeDone && cargando == false)
         {
             if (PantallaDeCarga.Instancia != null)
             {
                 PantallaDeCarga.Instancia.CargarEscena("Level2");
+                cargando = true;
             }
 
             else
             {
                 SceneManager.LoadScene("Level2");
+                cargando = true;
             }
         }
 
-        if (col.gameObject.tag == "Puerta2" && timer.timeDone == false && pause == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+        if (col.gameObject.tag == "Puerta2" && timer.timeDone == false && pause == false && cargando == false && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
         {
             if (PantallaDeCarga.Instancia != null)
             {
                 PantallaDeCarga.Instancia.CargarEscena("Level2");
+                cargando = true;
             }
 
             else
             {
                 SceneManager.LoadScene("Level2");
+                cargando = true;
             }
         }
     }

@@ -40,7 +40,7 @@ public class TimerHall : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        time = 60.0f;    //60
+        time = 0.0f;    //0
         auxiliarTime = 0.0f;
 
         audio = GetComponent<AudioSource>();
@@ -69,11 +69,11 @@ public class TimerHall : MonoBehaviour {
         if (inicio)
         {
             msgPanelTime.SetActive(true);
-            time -= Time.deltaTime;
+            time += Time.deltaTime;
             msgTextTime.text = time.ToString("f0");
         }
 
-        if (time < 50)
+        /*if (time > 10)
         {
             if (timeDone == false)
             {
@@ -89,7 +89,7 @@ public class TimerHall : MonoBehaviour {
             msgPanel.SetActive(true);
             msgPanelAux.SetActive(true);
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(10, -10);
-        }
+        }*/
 
 
 

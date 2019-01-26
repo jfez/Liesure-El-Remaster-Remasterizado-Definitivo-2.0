@@ -20,11 +20,11 @@ public class Score : MonoBehaviour {
     void Start () {
         if(scene == 0)      //recompensa TOTAL
         {
-            recompensa = 0;
-            recompensa1 = 0;
-            recompensa2 = 0;
+            recompensa = 0;     //propinas (hablar con gente en el hall)
+            recompensa1 = 0;    //habitaciones
+            recompensa2 = 0;    //restaurante
             pausas = 0;
-            ayuda = 0;
+            ayuda = 0;          //disminuir velocidad de las maletas
 
             PlayerPrefs.SetInt("recompensa0", recompensa);
             PlayerPrefs.SetInt("recompensa1", recompensa1);
