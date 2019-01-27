@@ -3732,6 +3732,24 @@ Transform:
   m_Father: {fileID: 1215454658}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &169108758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1489851539928538, guid: d03198502fb379c4291b8c938d8a0548,
+    type: 2}
+  m_PrefabInternal: {fileID: 1795222337}
+--- !u!114 &169108759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169108758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c8dc7daa016d4488b93037ff761808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eating: 0
+  scene: 1
 --- !u!1 &172544383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,7 +7162,7 @@ Transform:
   m_LocalScale: {x: 1.36, y: 1.36, z: 1.36}
   m_Children: []
   m_Father: {fileID: 1347570449}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &343671103
 SkinnedMeshRenderer:
@@ -27215,6 +27233,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4649336192459822, guid: 4a0d68bdcce4bb147979da754d837fc6,
     type: 2}
   m_PrefabInternal: {fileID: 1382538716}
+--- !u!1 &1427886602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1489851539928538, guid: d03198502fb379c4291b8c938d8a0548,
+    type: 2}
+  m_PrefabInternal: {fileID: 1999204284}
+--- !u!114 &1427886603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1427886602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c8dc7daa016d4488b93037ff761808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eating: 0
+  scene: 1
 --- !u!1 &1430304321
 GameObject:
   m_ObjectHideFlags: 0
@@ -32815,6 +32851,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1732674678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1489851539928538, guid: d03198502fb379c4291b8c938d8a0548,
+    type: 2}
+  m_PrefabInternal: {fileID: 2139546494}
+--- !u!114 &1732674679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732674678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c8dc7daa016d4488b93037ff761808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eating: 0
+  scene: 1
 --- !u!1 &1732798119
 GameObject:
   m_ObjectHideFlags: 0
@@ -34269,6 +34323,11 @@ Prefab:
         type: 2}
       propertyPath: m_Solver.targetPosition.z
       value: 0.0022155
+      objectReference: {fileID: 0}
+    - target: {fileID: 70865796613310900, guid: d03198502fb379c4291b8c938d8a0548,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114608551131642128, guid: d03198502fb379c4291b8c938d8a0548, type: 2}
@@ -38702,6 +38761,16 @@ Prefab:
       propertyPath: m_Length
       value: 1.2500135
       objectReference: {fileID: 0}
+    - target: {fileID: 70865796613310900, guid: d03198502fb379c4291b8c938d8a0548,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 70865796613310900, guid: d03198502fb379c4291b8c938d8a0548,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114608551131642128, guid: d03198502fb379c4291b8c938d8a0548, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: d03198502fb379c4291b8c938d8a0548, type: 2}
@@ -41589,6 +41658,11 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 70865796613310900, guid: d03198502fb379c4291b8c938d8a0548,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114608551131642128, guid: d03198502fb379c4291b8c938d8a0548, type: 2}

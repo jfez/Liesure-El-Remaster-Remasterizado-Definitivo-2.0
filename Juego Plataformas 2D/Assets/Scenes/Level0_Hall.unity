@@ -17201,6 +17201,24 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 846021229}
   - {fileID: 341445350}
+--- !u!1 &1492052558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1489851539928538, guid: d03198502fb379c4291b8c938d8a0548,
+    type: 2}
+  m_PrefabInternal: {fileID: 1107503003}
+--- !u!114 &1492052559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1492052558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c8dc7daa016d4488b93037ff761808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eating: 0
+  scene: 0
 --- !u!1 &1492491497
 GameObject:
   m_ObjectHideFlags: 0
