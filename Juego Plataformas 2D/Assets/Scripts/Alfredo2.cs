@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Mama : MonoBehaviour {
+public class Alfredo2 : MonoBehaviour {
 
     public TimerHall timer;
     public PCH player;
@@ -29,39 +29,38 @@ public class Mama : MonoBehaviour {
     void Start()
     {
 
-        
+
 
         index = -1;
 
         frases = new List<string>();
 
-        frases.Add("¡Hola! No tienes pinta de llevar mucho tiempo trabajando por aquí..");
-        frases.Add("¡Me recuerdas a mi cuando era más joven!");
-        frases.Add("Yo trabajaba en la hostelería en verano para pagarme los estudios...");
-        frases.Add("¡Qué duro era!");
-        frases.Add("1: Tienes mala cara... \n2: ¡Oh, mira qué pequeñín! ¿Estás de vacaciones con mamá?");
-        frases.Add("Uy, sí… no he pegado ojo esta noche porque mi niño no paraba de llorar…");
-        frases.Add("Con todo el ruido y la de gente que hay por aquí...");
-        frases.Add("¡Menuda idea lo de las vacaciones en familia!");
-        frases.Add("La verdad que mi niño está pasándolo genial este verano.");
-        frases.Add("Desde que su padre nos dejó parecía un poco desanimado...");
-        frases.Add("¡Pero mejor solos que mal acompañados!");
-        frases.Add("Ay ¿Has probado la comida del restaurante?");
-        frases.Add("¡No tienen casi nada para el pequeño!");
-        frases.Add("El pobre está ya harto de los potitos de verduras variadas.");
-        frases.Add("Vaya, me ha sentado muy bien la charla...");
-        frases.Add("La necesitaba de verdad…");
-        frases.Add("¡Me encargaré de que tus jefes sepan lo bien que me has tratado!");
-        frases.Add("¡Ya nos veremos por aquí!");
+        frases.Add("¿Ya has pasado por las habitaciones, hijo?");
+        frases.Add("Te habrás encontrado con el chico nuevo, lo han mandado a las plantas de arriba.");
+        frases.Add("¡Dicen que está armando un buen revuelo tirando maletas por doquier, jajaja!");
+        frases.Add("...");
+        frases.Add("Ay... juventud divino tesoro…");
+        frases.Add("¡Aprovechad vosotros que aún tenéis tiempo y energías!");
+        frases.Add("A mi edad, si me voy del hotel ya no sabré qué hacer…");
+        frases.Add("1: ¡No sufra! Podrá hacer turismo, como el 99% de la gente aquí... \n2: Tiene razón, el hotel es un buen lugar.");
+        frases.Add("Pero ya no podré volver al restaurante…");
+        frases.Add("Qué bien me lo paso y qué buena está la comida...");
+        frases.Add("Cuando tengas turno allí, ten en cuenta que la gente no suele quejarse si le traen la comida VIP del buffet.");
+        frases.Add("Si preguntan los jefes, yo nunca habré dicho eso…");
+        frases.Add("Pero igual te ayuda para salvarte de la ira de los clientes alguna vez.");
+        frases.Add("Qué bien, chico, me encanta que te guste trabajar por aquí.");
+        frases.Add("¡Por fin alguien que lo aprecia como yo!");
+        frases.Add("Bueno, te dejo que enseguida abre el restaurante y esos bistecs no se van a gorronear solos… jejeje.");
+        frases.Add("¡Hasta pronto!");
         frases.Add("");
 
         //msgText.text = "¡Hey, tú, novato! Ven aquí que te explique lo que debes hacer.";
-        msgTextAux.text = "MAMÁ";
+        msgTextAux.text = "ALFREDO";
         msgPanel.SetActive(false);
         msgPanelAux.SetActive(false);
         talk = false;
         decision = false;
-        
+
 
         //print (PlayerPrefs.GetInt("recompensa0"));
 
@@ -73,23 +72,23 @@ public class Mama : MonoBehaviour {
 
         if (talk == false)
         {
-            if (inside == true && index < 18 && decision == false && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
+            if (inside == true && index < 17 && decision == false && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
 
                 if (player.canMove)
                 {
                     player.canMove = false;
                     player.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-                    player.transform.localPosition = new Vector3(2.67f, -4.683063f, 0f);
-                    player.transform.localScale = new Vector3(-0.48016f, 0.48016f, 0.48016f);
+                    player.transform.localPosition = new Vector3(12.52f, -4.683063f, 0f);
+                    player.transform.localScale = new Vector3(0.48016f, 0.48016f, 0.48016f);
                 }
-                
 
-                if (index == 7)
+
+                if (index == 12)
                 {
-                    index = 11;
+                    index = 15;
                     msgText.text = frases[index];
-                    msgTextAux.text = "MAMÁ";
+                    msgTextAux.text = "ALFREDO";
                     msgPanel.SetActive(true);
                     msgPanelAux.SetActive(true);
                 }
@@ -98,7 +97,7 @@ public class Mama : MonoBehaviour {
                 {
                     index++;
                     msgText.text = frases[index];
-                    msgTextAux.text = "MAMÁ";
+                    msgTextAux.text = "ALFREDO";
                     msgPanel.SetActive(true);
                     msgPanelAux.SetActive(true);
                 }
@@ -110,15 +109,15 @@ public class Mama : MonoBehaviour {
         {
             if (inside == true && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
-                msgText.text = frases[17]; //despedida
-                msgTextAux.text = "MAMÁ";
+                msgText.text = frases[16]; //despedida
+                msgTextAux.text = "ALFREDO";
                 msgPanel.SetActive(true);
                 msgPanelAux.SetActive(true);
             }
 
         }
 
-        if (index == 4)
+        if (index == 7)
         {
             if (decision == false)
             {
@@ -130,43 +129,36 @@ public class Mama : MonoBehaviour {
             {
                 index++;
                 msgText.text = frases[index];
-                msgTextAux.text = "MAMÁ";
+                msgTextAux.text = "ALFREDO";
                 msgPanel.SetActive(true);
                 msgPanelAux.SetActive(true);
                 decision = false;
-                recompensa = PlayerPrefs.GetInt("recompensa0");
-                PlayerPrefs.SetInt("recompensa0", recompensa + 10);
+                
             }
 
             else if (inside == true && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.Alpha2)) || (Input.GetKeyDown(KeyCode.Keypad2)) || (Input.GetKeyDown(KeyCode.JoystickButton5)))
             {
-                index = 8;
+                index = 13;
                 msgText.text = frases[index];
-                msgTextAux.text = "MAMÁ";
+                msgTextAux.text = "ALFREDO";
                 msgPanel.SetActive(true);
                 msgPanelAux.SetActive(true);
                 decision = false;
-                recompensa = PlayerPrefs.GetInt("recompensa0");
-                PlayerPrefs.SetInt("recompensa0", recompensa + 20);
+                
             }
         }
 
 
-        if (index == 18)
+        if (index == 17)
         {
             msgPanel.SetActive(false);
             msgPanelAux.SetActive(false);
             player.canMove = true;
             talk = true;
-            index = 17;
-
-
-
-            recompensa = PlayerPrefs.GetInt("recompensa0");
-            PlayerPrefs.SetInt("recompensa0", recompensa+50);
-
+            index = 16;
             timer.conversaciones++;
-            //print(PlayerPrefs.GetInt("recompensa0"));
+
+
         }
 
     }

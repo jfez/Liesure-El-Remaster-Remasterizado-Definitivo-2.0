@@ -40,13 +40,13 @@ public class TutoAlfredo : MonoBehaviour {
         frases.Add("Imagino que sabrás cómo moverte, puedes utilizar las flechitas del teclado o los sticks del mando.");
         frases.Add("No, no lo intentes ahora, mientras hables con gente en el hall, deberás mantener la compostura.");
         frases.Add("Para mostrarnos tus habilidades de salto puedes utilizar la barra espaciadora o el botón X/A del mando.");
-        frases.Add("Por último, si quieres hablar con cualquiera de nosotros o recoger objetos, puedes utilizar la tecla INTRO o el botón del cuadrado/X.");
+        frases.Add("Por último, si quieres hablar con cualquiera de nosotros o interactuar con objetos, puedes utilizar la tecla INTRO o el botón del cuadrado/X.");
         frases.Add("No seas tímido y prueba a hablar con toda la gente que te encuentres y que tu tiempo de descanso te permita.");
         frases.Add("Piensa que siempre pueden darte algún consejo útil o contarte algo interesante.");
         frases.Add("Ten en cuenta que si haces algún tipo de pausa (con el botón ESC o START) se te restará del sueldo");
         frases.Add("¡Te permitirá descansar un rato, reiniciar el nivel o el juego y por tanto, tiene un precio!");
         frases.Add("También puedes decidir cómo tratar a tus interlocutores; no siempre vas a tener un buen día.");
-        frases.Add("Para decidir entre las contestaciones puedes emplear el 1/LB/L1 o el 2/RB/R1.");
+        frases.Add("Para decidir entre las contestaciones puedes emplear el 1/L1/LB o el 2/R1/RB.");
         frases.Add("¿Lo has entendido?");
         frases.Add("1: ¡Claro! \n2: No ¿podrías repetirlo?");
         frases.Add("¡Pues ale! Ya estás listo para trabajar por aquí.");
@@ -57,7 +57,7 @@ public class TutoAlfredo : MonoBehaviour {
         frases.Add("También es verdad que le robo un poquito al hotel en mis visitas al restaurante, jijiji.");
         frases.Add("1: Imagino que no sentará bien a los jefes… \n2: No será para tanto... ¡Con la de dinero que ganan!");
         frases.Add("¡Pero qué es la vida si no pequeñas alegrías!");
-        frases.Add("¡Ay, qué simpático! No como el otro nuevo... ve con ojo por las habitaciones, le hemos mandado allí y se ve que no es muy diestro con las maletas");
+        frases.Add("¡Ay, qué simpático! No como el otro nuevo... ve con ojo por las habitaciones, le hemos mandado allí y está hecho un lío.");
         frases.Add("Bueno, he de seguir ya con la faena que pronto sacarán el menú en el comedor y no me lo quiero perder...");
         frases.Add("¡Hasta luego! En cuanto acabes la cháchara, ve a trabajar a las habitaciones, al final del pasillo.");
         frases.Add("");
@@ -118,6 +118,7 @@ public class TutoAlfredo : MonoBehaviour {
             if (inside == true && player.pause == false && player.canInteract && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2) || Input.GetKeyDown(KeyCode.Return)))
             {
                 msgText.text = frases[24]; //despedida
+                msgTextAux.text = "ALFREDO";
                 msgPanel.SetActive(true);
                 msgPanelAux.SetActive(true);
             }
@@ -220,7 +221,8 @@ public class TutoAlfredo : MonoBehaviour {
              msgPanelAux.SetActive(false);
              player.canMove = true;
              talk = true;
-            index = 24;
+             index = 24;
+             timer.conversaciones++;
          }
 
     }

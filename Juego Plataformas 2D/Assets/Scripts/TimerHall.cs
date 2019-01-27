@@ -6,17 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class TimerHall : MonoBehaviour {
 
-    [SerializeField] GameObject msgPanelTime;
-    [SerializeField] Text msgTextTime;
+    //[SerializeField] GameObject msgPanelTime;
+    //[SerializeField] Text msgTextTime;
 
     public float time;
-    public float auxiliarTime;
+    //public float auxiliarTime;
     //public PickUp carrito;
     public bool inicio;
     //public int recompensa;
     public PCH player;
     public bool timeDone;
     public GameObject pared;
+    public int hall;
+    public int conversaciones;
 
     public AudioSource audio;
 
@@ -26,28 +28,32 @@ public class TimerHall : MonoBehaviour {
     [SerializeField] GameObject msgPanelAux;
     [SerializeField] Text msgTextAux;
 
-    /*public Renderer reloj1;
-    public Renderer reloj11;
-    public Renderer reloj2;
-    public Renderer reloj21;*/
-
-
-
-    /*private bool panic;
     private bool end;
-    private bool restart;*/
+
+    
 
     // Use this for initialization
     void Start()
     {
-        time = 0.0f;    //0
-        auxiliarTime = 0.0f;
+        if (hall == 0)
+        {
+            time = 0.0f;    //200 secs
+        }
+
+        else if (hall == 1)
+        {
+            time = 20.0f;    //180 secs
+        }
+        
+        
 
         audio = GetComponent<AudioSource>();
 
         inicio = true;
+        conversaciones = 0;
+        end = false;
 
-        msgPanelTime.SetActive(false);
+        //msgPanelTime.SetActive(false);
         msgPanel.SetActive(false);
         msgPanelAux.SetActive(false);
         timeDone = false;
@@ -68,12 +74,12 @@ public class TimerHall : MonoBehaviour {
     {
         if (inicio)
         {
-            msgPanelTime.SetActive(true);
+            //msgPanelTime.SetActive(true);
             time += Time.deltaTime;
-            msgTextTime.text = time.ToString("f0");
+            //msgTextTime.text = time.ToString("f0");
         }
 
-        /*if (time > 10)
+        if (time > 200)
         {
             if (timeDone == false)
             {
@@ -85,11 +91,17 @@ public class TimerHall : MonoBehaviour {
             player.canMove = false;
             msgText.text = "¡Lo siento, he de irme, llego tarde!";
             msgTextAux.text = "TÚ";
-            msgPanelTime.SetActive(false);
+            //msgPanelTime.SetActive(false);
             msgPanel.SetActive(true);
             msgPanelAux.SetActive(true);
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(10, -10);
-        }*/
+        }
+
+        if (conversaciones > 2 && end == false)
+        {
+            time = 190.0f;
+            end = true;
+        }
 
 
 
