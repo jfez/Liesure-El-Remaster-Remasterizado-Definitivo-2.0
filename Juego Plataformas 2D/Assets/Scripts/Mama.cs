@@ -43,7 +43,7 @@ public class Mama : MonoBehaviour {
         frases.Add("Uy, sí… no he pegado ojo esta noche porque mi niño no paraba de llorar…");
         frases.Add("Con todo el ruido y la de gente que hay por aquí...");
         frases.Add("¡Menuda idea lo de las vacaciones en familia!");
-        frases.Add("La verdad que mi niño está pasándolo genial este verano.");
+        frases.Add("La verdad es que mi niño está pasándolo genial este verano.");
         frases.Add("Desde que su padre nos dejó parecía un poco desanimado...");
         frases.Add("¡Pero mejor solos que mal acompañados!");
         frases.Add("Ay ¿Has probado la comida del restaurante?");

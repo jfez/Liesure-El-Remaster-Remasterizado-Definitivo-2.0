@@ -2801,6 +2801,7 @@ GameObject:
   - component: {fileID: 129132091}
   - component: {fileID: 129132090}
   - component: {fileID: 129132095}
+  - component: {fileID: 129132096}
   m_Layer: 0
   m_Name: "Ni\xF1o (2)"
   m_TagString: Untagged
@@ -2992,6 +2993,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &129132096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129132089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1ce7679dbbb0643b658894b1595f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  running: 0
+  scene: 1
 --- !u!1 &131885675
 GameObject:
   m_ObjectHideFlags: 0
@@ -7092,7 +7106,7 @@ Transform:
   m_LocalScale: {x: 1.36, y: 1.36, z: 1.36}
   m_Children: []
   m_Father: {fileID: 1347570449}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &343671103
 SkinnedMeshRenderer:
@@ -7919,6 +7933,7 @@ GameObject:
   - component: {fileID: 393104025}
   - component: {fileID: 393104029}
   - component: {fileID: 393104030}
+  - component: {fileID: 393104031}
   m_Layer: 0
   m_Name: "Ni\xF1o (1)"
   m_TagString: Untagged
@@ -8110,6 +8125,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &393104031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393104024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d1ce7679dbbb0643b658894b1595f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  running: 0
+  scene: 1
 --- !u!1 &393414958
 GameObject:
   m_ObjectHideFlags: 0
@@ -25830,7 +25858,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4901848889603454, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4456002885982386, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
       propertyPath: m_RootOrder
@@ -25838,7 +25866,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4340073996145292, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4320419045408290, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
       propertyPath: m_RootOrder
@@ -25846,7 +25874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4188470557495138, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114045120853538082, guid: 7647f8381dc86db48b99bff4b8acc637,
         type: 2}
