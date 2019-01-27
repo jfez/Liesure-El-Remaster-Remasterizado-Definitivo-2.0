@@ -11,7 +11,17 @@ public class menuOpciones : MonoBehaviour
 
     public Dropdown resolutionDropdown;
 
+    public Slider slider;
+
+    public Toggle myToggle;
+
+    public Dropdown myDropdown;
+
+    public Dropdown myDropdown2;
+
     Resolution[] resolutions;
+
+    private float valor;
 
     private void Start()
     {
@@ -37,6 +47,17 @@ public class menuOpciones : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+
+        audioMixer.GetFloat("volume", out valor);
+        slider.value = valor;
+
+        myToggle.isOn = Screen.fullScreen;
+
+        myDropdown.value = QualitySettings.GetQualityLevel();
+
+        myDropdown2.value = currentResolutionIndex;
+
+
     }
 
     public void SetResolution (int resolutionIndex)
@@ -59,4 +80,9 @@ public class menuOpciones : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
+    /*void Update()
+    {
+        print(myToggle.isOn);
+    }*/
 }
