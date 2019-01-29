@@ -4829,6 +4829,36 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 137322637338970586, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 137856379010524340, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 137634874267915776, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 137835951313561782, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 137429695381781008, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 137951279981475052, guid: 7647f8381dc86db48b99bff4b8acc637,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
   m_IsPrefabAsset: 0
@@ -9666,12 +9696,12 @@ Prefab:
     - target: {fileID: 61078791163879758, guid: 330088f52aed91c4bb835044843ed63b,
         type: 2}
       propertyPath: m_Offset.y
-      value: -0.847803
+      value: -0.84301394
       objectReference: {fileID: 0}
     - target: {fileID: 61078791163879758, guid: 330088f52aed91c4bb835044843ed63b,
         type: 2}
       propertyPath: m_Size.y
-      value: 0.4147647
+      value: 0.42434275
       objectReference: {fileID: 0}
     - target: {fileID: 61078791163879758, guid: 330088f52aed91c4bb835044843ed63b,
         type: 2}

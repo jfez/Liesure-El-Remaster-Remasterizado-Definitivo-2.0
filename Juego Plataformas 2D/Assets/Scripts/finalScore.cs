@@ -71,12 +71,12 @@ public class finalScore : MonoBehaviour {
             
             if (PantallaDeCarga.Instancia != null)
             {
-                PantallaDeCarga.Instancia.CargarEscena("MenuInicial");
+                PantallaDeCarga.Instancia.CargarEscena("Creditos");
             }
 
             else
             {
-                SceneManager.LoadScene("MenuInicial");
+                SceneManager.LoadScene("Creditos");
             }
             index++;
         }
